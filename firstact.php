@@ -1,7 +1,10 @@
+
+    
 <?php
 
+//DIFFERENCE WITH ARRAY LIST
 
-let $course1 = [
+$course1 = [
     'BSIT',
     'BSBA',
     'HMO',
@@ -12,13 +15,22 @@ let $course1 = [
     'TOURISM',
 ];
 
-let $course2 = [
+$course2 = [
     'HMO',
     'ENGINEERING',
     'NURSE',
 ];
 
-let difference = course1.filter(x => course2.indexOf(x) === -1);
-console.log(difference);
+$result = array_diff ($course1, $course2);
 
-print_r($result);
+?>
+
+<html> 
+    <?php
+    print_r($result);
+    ?>
+</html>
+
+
+
+
