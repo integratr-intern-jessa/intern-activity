@@ -10,7 +10,7 @@ if (isset($_POST['submit_person'])) {
     $sql = "INSERT into persons (name, place_of_birth, birthday, gender) VALUES
     ('$name', '$place_of_birth', '$birthday', '$gender')";
 
-    mysqli_query($conn, $sql);
+    $query = $conn->query($sql) or die($conn->error);
 
     $_SESSION['success']= "Person successfully added";
     header("location: ../person.php");
