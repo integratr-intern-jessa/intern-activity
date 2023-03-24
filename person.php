@@ -1,7 +1,7 @@
 <?php include('header.php')?>
   <div class="container">
     
-  <a class="btn btn-primary" href="person/add.php">Add Person</a>
+  <a class="btn btn-primary" href="orders/addorder.php">Add Person</a>
   <table class="table">
   <thead>
     <tr>
@@ -10,11 +10,11 @@
       <th scope="col">Gender</th>
       <th scope="col">Birthday</th>
       <th scope="col">Birthplace</th>
-      <th scope="col">Actions</th>
+      
     </tr>
   </thead>
   
-
+ 
     <tbody>
     <?php
     $query= $conn->query("SELECT * FROM persons");
